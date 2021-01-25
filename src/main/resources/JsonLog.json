@@ -1,0 +1,207 @@
+[
+{
+  "timeMillis" : 1611577918049,
+  "thread" : "main",
+  "level" : "TRACE",
+  "loggerName" : "com.test.maven.FileNameHandler",
+  "message" : "Start trace",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918382,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.FileNameHandler",
+  "message" : "Entering application.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918385,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.util.PropertiesUtil",
+  "message" : "Properties have been gotten",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918412,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.util.PropertiesUtil",
+  "message" : "File config.properties have been read",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918415,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.service.FileService",
+  "message" : "Checking oldFile1...",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918416,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.service.FileService",
+  "message" : "/home/dzmitry/IdeaProjects/XMLAndJSON/src/main/resources/configs/old_file1.json - false",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918418,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.service.FileService",
+  "message" : "oldFile1 have been renamed",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918419,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.service.FileService",
+  "message" : "Checking oldFile2...",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918421,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.service.FileService",
+  "message" : "/home/dzmitry/IdeaProjects/XMLAndJSON/src/main/resources/configs/old_file2.json - false",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918422,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.service.FileService",
+  "message" : "oldFile2 have been renamed",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918424,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.FileNameHandler",
+  "message" : "[new_file1.json, new_file2.json]",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918426,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.util.PropertiesUtil",
+  "message" : "Properties have been gotten",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918433,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.util.PropertiesUtil",
+  "message" : "File config.properties have been read",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918435,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.util.PropertiesUtil",
+  "message" : "Properties have been gotten",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918442,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.util.PropertiesUtil",
+  "message" : "File config.properties have been read",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918463,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.FileNameHandler",
+  "message" : "Application closed.",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611577918472,
+  "thread" : "main",
+  "level" : "TRACE",
+  "loggerName" : "com.test.maven.FileNameHandler",
+  "message" : "End trace",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+
+]
