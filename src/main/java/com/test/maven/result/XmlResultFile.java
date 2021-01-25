@@ -1,7 +1,6 @@
-package com.test.maven;
+package com.test.maven.result;
 
 import com.test.maven.util.Constants;
-import com.test.maven.util.PropertiesUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
@@ -75,8 +74,6 @@ public class XmlResultFile implements ResultAddable {
 
     @Override
     public void addResult(long executionTime) {
-        String xmlResult = PropertiesUtil.SINGLETON.getProperties().getProperty("xmlResult");
-        if (xmlResult.contentEquals("true"))
             writeXML(executionTime);
     }
 }

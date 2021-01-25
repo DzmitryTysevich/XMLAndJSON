@@ -1,10 +1,9 @@
-package com.test.maven;
+package com.test.maven.result;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.test.maven.data.JsonData;
 import com.test.maven.util.Constants;
-import com.test.maven.util.PropertiesUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -51,8 +50,6 @@ public class JsonResultFile implements ResultAddable {
 
     @Override
     public void addResult(long executionTime) {
-        String jsonResult = PropertiesUtil.SINGLETON.getProperties().getProperty("jsonResult");
-        if (jsonResult.contentEquals("true"))
             writeJson(executionTime);
     }
 }

@@ -5,6 +5,5 @@
     <entry key="file2">/home/dzmitry/IdeaProjects/XMLAndJSON/src/main/resources/configs/old_file2.json</entry>
     <entry key="path">/home/dzmitry/IdeaProjects/XMLAndJSON/src/main/resources/configs/</entry>
     <entry key="suffix">new</entry>
-    <entry key="jsonResult">true</entry>
-    <entry key="xmlResult">false</entry>
+    <entry key="ResultFile">json</entry>
 </properties>

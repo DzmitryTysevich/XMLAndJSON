@@ -1,5 +1,6 @@
 package com.test.maven;
 
+import com.test.maven.result.ResultAddable;
 import com.test.maven.service.FileService;
 import com.test.maven.service.TimeService;
 import com.test.maven.util.Constants;
@@ -13,12 +14,10 @@ import java.util.Properties;
 
 public class FileNameHandler {
     private static final Logger LOGGER = LogManager.getLogger(FileNameHandler.class);
-    private final ResultAddable xmlResult;
-    private final ResultAddable jsonResult;
+    private final ResultAddable resultAddable;
 
-    public FileNameHandler(ResultAddable xmlResult, ResultAddable jsonResult) {
-        this.xmlResult = xmlResult;
-        this.jsonResult = jsonResult;
+    public FileNameHandler(ResultAddable resultAddable) {
+        this.resultAddable = resultAddable;
     }
 
     public void handle() {
@@ -43,8 +42,7 @@ public class FileNameHandler {
         long endTime = System.currentTimeMillis();
         long executionTime = TimeService.SINGLETON.getExecutionTime(startTime, endTime);
 
-        xmlResult.addResult(executionTime);
-        jsonResult.addResult(executionTime);
+        resultAddable.addResult(executionTime);
 
         LOGGER.info("Application closed.");
         LOGGER.trace("End trace");

@@ -1,6 +1,30 @@
 [
 {
-  "timeMillis" : 1611577918049,
+  "timeMillis" : 1611590464429,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.util.PropertiesUtil",
+  "message" : "Properties have been gotten",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611590464773,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.util.PropertiesUtil",
+  "message" : "File config.properties have been read",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611590464776,
   "thread" : "main",
   "level" : "TRACE",
   "loggerName" : "com.test.maven.FileNameHandler",
@@ -12,7 +36,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611577918382,
+  "timeMillis" : 1611590464778,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.FileNameHandler",
@@ -24,7 +48,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611577918385,
+  "timeMillis" : 1611590464779,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.util.PropertiesUtil",
@@ -36,7 +60,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611577918412,
+  "timeMillis" : 1611590464786,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.util.PropertiesUtil",
@@ -48,7 +72,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611577918415,
+  "timeMillis" : 1611590464788,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.service.FileService",
@@ -60,7 +84,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611577918416,
+  "timeMillis" : 1611590464790,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.service.FileService",
@@ -72,7 +96,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611577918418,
+  "timeMillis" : 1611590464793,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.service.FileService",
@@ -84,7 +108,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611577918419,
+  "timeMillis" : 1611590464795,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.service.FileService",
@@ -96,7 +120,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611577918421,
+  "timeMillis" : 1611590464796,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.service.FileService",
@@ -108,7 +132,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611577918422,
+  "timeMillis" : 1611590464797,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.service.FileService",
@@ -120,7 +144,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611577918424,
+  "timeMillis" : 1611590464799,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.FileNameHandler",
@@ -132,55 +156,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611577918426,
-  "thread" : "main",
-  "level" : "INFO",
-  "loggerName" : "com.test.maven.util.PropertiesUtil",
-  "message" : "Properties have been gotten",
-  "endOfBatch" : false,
-  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
-  "threadId" : 1,
-  "threadPriority" : 5,
-  "myCustomField" : "myCustomValue"
-}
-, {
-  "timeMillis" : 1611577918433,
-  "thread" : "main",
-  "level" : "INFO",
-  "loggerName" : "com.test.maven.util.PropertiesUtil",
-  "message" : "File config.properties have been read",
-  "endOfBatch" : false,
-  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
-  "threadId" : 1,
-  "threadPriority" : 5,
-  "myCustomField" : "myCustomValue"
-}
-, {
-  "timeMillis" : 1611577918435,
-  "thread" : "main",
-  "level" : "INFO",
-  "loggerName" : "com.test.maven.util.PropertiesUtil",
-  "message" : "Properties have been gotten",
-  "endOfBatch" : false,
-  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
-  "threadId" : 1,
-  "threadPriority" : 5,
-  "myCustomField" : "myCustomValue"
-}
-, {
-  "timeMillis" : 1611577918442,
-  "thread" : "main",
-  "level" : "INFO",
-  "loggerName" : "com.test.maven.util.PropertiesUtil",
-  "message" : "File config.properties have been read",
-  "endOfBatch" : false,
-  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
-  "threadId" : 1,
-  "threadPriority" : 5,
-  "myCustomField" : "myCustomValue"
-}
-, {
-  "timeMillis" : 1611577918463,
+  "timeMillis" : 1611590464822,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.FileNameHandler",
@@ -192,7 +168,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611577918472,
+  "timeMillis" : 1611590464823,
   "thread" : "main",
   "level" : "TRACE",
   "loggerName" : "com.test.maven.FileNameHandler",

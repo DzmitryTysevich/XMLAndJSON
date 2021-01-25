@@ -1,4 +1,4 @@
-package com.test.maven;
+package com.test.maven.result;
 
 public interface ResultAddable {
     void addResult(long executionTime);
