@@ -19,10 +19,13 @@ public class JsonResultFile implements ResultAddable {
     private static final Logger LOGGER = LogManager.getLogger(JsonResultFile.class);
 
     private void writeJson(long executionTime) {
+        JsonData jsonData = new JsonData();
         String configName = new File("config.xml").getName();
         String time = String.valueOf(executionTime);
         String files = SINGLETON.getOLD_FILES() + Arrays.toString(new File(Constants.CONFIGS_PATH).list());
-        JsonData jsonData = new JsonData(configName, time, files);
+        jsonData.setConfigFileName(configName);
+        jsonData.setExecutionTime(time);
+        jsonData.setFiles(files);
 
         ObjectMapper objectMapper = new ObjectMapper();
         String jsonString = null;
@@ -50,6 +53,6 @@ public class JsonResultFile implements ResultAddable {
 
     @Override
     public void addResult(long executionTime) {
-            writeJson(executionTime);
+        writeJson(executionTime);
     }
 }

@@ -1,15 +1,12 @@
 package com.test.maven.data;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class JsonData {
     private String configFileName;
     private String executionTime;
     private String files;
-
-    public JsonData(String configFileName, String executionTime, String files) {
-        this.configFileName = configFileName;
-        this.executionTime = executionTime;
-        this.files = files;
-    }
 
     public String getConfigFileName() {
         return configFileName;
@@ -33,5 +30,10 @@ public class JsonData {
 
     public void setFiles(String files) {
         this.files = files;
+    }
+
+    @Override
+    public String toString() {
+        return "JsonData [configFileName: " + configFileName + ", executionTime: " + executionTime + ", files: " + files + "]";
     }
 }

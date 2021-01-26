@@ -1,6 +1,6 @@
 [
 {
-  "timeMillis" : 1611590464429,
+  "timeMillis" : 1611682642310,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.util.PropertiesUtil",
@@ -12,7 +12,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611590464773,
+  "timeMillis" : 1611682642687,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.util.PropertiesUtil",
@@ -24,7 +24,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611590464776,
+  "timeMillis" : 1611682642692,
   "thread" : "main",
   "level" : "TRACE",
   "loggerName" : "com.test.maven.FileNameHandler",
@@ -36,7 +36,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611590464778,
+  "timeMillis" : 1611682642693,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.FileNameHandler",
@@ -48,7 +48,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611590464779,
+  "timeMillis" : 1611682642694,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.util.PropertiesUtil",
@@ -60,7 +60,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611590464786,
+  "timeMillis" : 1611682642701,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.util.PropertiesUtil",
@@ -72,7 +72,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611590464788,
+  "timeMillis" : 1611682642704,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.service.FileService",
@@ -84,11 +84,11 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611590464790,
+  "timeMillis" : 1611682642705,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.service.FileService",
-  "message" : "/home/dzmitry/IdeaProjects/XMLAndJSON/src/main/resources/configs/old_file1.json - false",
+  "message" : "/home/dzmitry/IdeaProjects/XMLAndJSON/src/main/resources/configs/old_file1.json - true",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
   "threadId" : 1,
@@ -96,7 +96,19 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611590464793,
+  "timeMillis" : 1611682642707,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.service.FileService",
+  "message" : "Rename oldFile1...",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611682642709,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.service.FileService",
@@ -108,7 +120,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611590464795,
+  "timeMillis" : 1611682642710,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.service.FileService",
@@ -120,11 +132,11 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611590464796,
+  "timeMillis" : 1611682642712,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.service.FileService",
-  "message" : "/home/dzmitry/IdeaProjects/XMLAndJSON/src/main/resources/configs/old_file2.json - false",
+  "message" : "/home/dzmitry/IdeaProjects/XMLAndJSON/src/main/resources/configs/old_file2.json - true",
   "endOfBatch" : false,
   "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
   "threadId" : 1,
@@ -132,7 +144,19 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611590464797,
+  "timeMillis" : 1611682642713,
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "com.test.maven.service.FileService",
+  "message" : "Rename oldFile2...",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5,
+  "myCustomField" : "myCustomValue"
+}
+, {
+  "timeMillis" : 1611682642715,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.service.FileService",
@@ -144,7 +168,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611590464799,
+  "timeMillis" : 1611682642716,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.FileNameHandler",
@@ -156,7 +180,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611590464822,
+  "timeMillis" : 1611682642725,
   "thread" : "main",
   "level" : "INFO",
   "loggerName" : "com.test.maven.FileNameHandler",
@@ -168,7 +192,7 @@
   "myCustomField" : "myCustomValue"
 }
 , {
-  "timeMillis" : 1611590464823,
+  "timeMillis" : 1611682642736,
   "thread" : "main",
   "level" : "TRACE",
   "loggerName" : "com.test.maven.FileNameHandler",
