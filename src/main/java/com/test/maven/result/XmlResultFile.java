@@ -1,17 +1,14 @@
 package com.test.maven.result;
 
+import com.test.maven.data.XMLData;
 import com.test.maven.util.Constants;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.*;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+
 import java.io.File;
 import java.util.Arrays;
 
@@ -21,59 +18,26 @@ public class XmlResultFile implements ResultAddable {
     private static final Logger LOGGER = LogManager.getLogger(XmlResultFile.class);
 
     private void writeXML(long executionTime) {
-        DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+        XMLData xmlData = new XMLData();
+        String configName = new File("config.xml").getName();
+        String time = String.valueOf(executionTime);
+        String files = SINGLETON.getOLD_FILES() + Arrays.toString(new File(Constants.CONFIGS_PATH).list());
+        xmlData.setConfigFileName(configName);
+        xmlData.setExecutionTime(time);
+        xmlData.setFiles(files);
 
-        DocumentBuilder docBuilder = null;
         try {
-            docBuilder = docFactory.newDocumentBuilder();
-        } catch (ParserConfigurationException e) {
-            LOGGER.error("Exception happen!", e);
-        }
-        assert docBuilder != null;
-        Document document = docBuilder.newDocument();
-
-        Element rootElement = document.createElement("Maven");
-        document.appendChild(rootElement);
-
-        Element configFileName = document.createElement("ConfigFileName");
-        rootElement.appendChild(configFileName);
-        configFileName.setTextContent(new File("config.xml").getName());
-
-        Element time = document.createElement("ExecutionTime");
-        rootElement.appendChild(time);
-        time.setTextContent(String.valueOf(executionTime));
-
-        Element files = document.createElement("Files");
-        rootElement.appendChild(files);
-        files.setTextContent(SINGLETON.getOLD_FILES() + Arrays.toString(new File(Constants.CONFIGS_PATH).list()));
-
-        //Create TransformerFactory for print to console
-        TransformerFactory transformerFactory = TransformerFactory.newInstance();
-        Transformer transformer = null;
-        try {
-            transformer = transformerFactory.newTransformer();
-        } catch (TransformerConfigurationException e) {
-            LOGGER.error("Exception happen!", e);
-        }
-
-        //Output to console
-        assert transformer != null;
-        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-        DOMSource source = new DOMSource(document);
-
-        //Print to console
-        StreamResult console = new StreamResult(System.out);
-        StreamResult resultToFile = new StreamResult(new File(Constants.RESULT_XML));
-        try {
-            transformer.transform(source, console);
-            transformer.transform(source, resultToFile);
-        } catch (TransformerException e) {
-            LOGGER.error("Exception happen!", e);
+            JAXBContext jaxbContext = JAXBContext.newInstance(XMLData.class);
+            Marshaller marshaller = jaxbContext.createMarshaller();
+            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+            marshaller.marshal(xmlData, new File(Constants.RESULT_XML));
+        } catch (JAXBException e) {
+            LOGGER.error("Exception happen");
         }
     }
 
     @Override
     public void addResult(long executionTime) {
-            writeXML(executionTime);
+        writeXML(executionTime);
     }
 }
